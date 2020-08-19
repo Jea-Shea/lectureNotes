@@ -1,0 +1,110 @@
+/* GENERAL SETUP */
+
+html, body {
+    margin: 0;
+    padding: 5px; 
+    
+}
+
+html {
+    font-size: 10px;
+    background: linear-gradient(180deg, rgba(226, 225, 225) 0%, rgba(94, 111, 97) 50%, rgba(60, 69, 60) 100%);
+
+}
+
+body {
+    width: 80vw;
+    margin: 0;
+    height: 100vh;
+}
+    h1{
+    padding: 0;
+    margin: 5px, 5px, 5px, 5px;
+    font-size: 8rem;
+    color: #CCC3C1;
+    text-shadow: 1px 1px 3px #3C453C;
+    font-family: 'Antic Slab', serif;
+    text-transform: uppercase;
+}
+
+    h2 {
+    font-family: 'Antic Slab', serif;
+    color: #3C453C;
+    font-size: 4rem;
+    /* h1:hover will give text color change*/
+
+}
+/* TYPOGRAPHY   */
+p   {
+    font-family: 'Antic Slab', serif;
+    font-family: 'Montserrat', sans-serif;
+    color: #3C453C;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px black; /*horizontal, vertical, blur radius and color */
+    line-height: 1.5;
+}
+
+li  {
+    font-family: 'Antic Slab', serif;
+    font-family: 'Montserrat', sans-serif;
+    color: #3C453C;
+    font-size: 1.5rem;
+}
+
+/* HEADER LAYOUT   */
+
+header {
+    margin-bottom: 10px;
+}
+    
+main, header, nav, article, aside, footer, section {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 2%;
+}
+
+nav{
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style-type: none;
+    text-align: center;
+    flex: 1;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+/* MAIN LAYOUT  */
+
+main{
+    display: flex;
+}
+
+section, article {
+    flex: 4;
+    /* section and article will take up 80% of the view port(4/(4+1))*/
+}
+
+aside   {
+    flex:1;
+       /* section and article will take up 80% of the view port(1/(1+4))*/
+    margin-left: 10px;
+    padding: 1%;
+}
+
+aside a {
+    float: left;
+    width: 50%;
+}
+
+aside img {
+    max-width: 100%;
+}
+
+footer {
+    margin-top: 10px;
+}
